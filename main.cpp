@@ -14,7 +14,7 @@ int main()
         resourcePath = "";
         #endif
 
-    Ogre::Root* root = new Ogre::Root(resourcePath + "plugins.cfg", resourcePath + "ogre.cfg", "Ogre.log");
+    Ogre::Root* root = new Ogre::Root();
 
     if (!root->showConfigDialog())
         return -1;
