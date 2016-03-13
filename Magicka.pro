@@ -7,13 +7,13 @@ CONFIG -= qt
 
 win32 {
     LIBS *= user32.lib
-    LIBS += -L$(OGRE_HOME)\\boost\\lib
-    release:LIBS += -L$(OGRE_HOME)\\lib\\release
-    debug:LIBS += -LC:\\Qt\\Library\\Frameworks\\lib\\debug
-    INCLUDEPATH += C:\\Qt\\Library\\Frameworks\\include
-    INCLUDEPATH += C:\\Qt\\Library\\Frameworks\\include\\OIS
-    INCLUDEPATH += C:\\Qt\\Library\\Frameworks\\include\\OGRE
-    INCLUDEPATH += C:\\Qt\\Library\\Frameworks\\boost
+    LIBS += -LC:\\Qt\\Library\\boost\\Frameworks\\OgreSDK_MinGW_v1-8-1\\lib
+    release:LIBS += -LC:\\Qt\\Library\\Frameworks\\OgreSDK_MinGW_v1-8-1\\release
+    debug:LIBS += -LC:\\Qt\\Library\\Frameworks\\OgreSDK_MinGW_v1-8-1\\lib\\debug
+    INCLUDEPATH += C:\\Qt\\Library\\Frameworks\\OgreSDK_MinGW_v1-8-1\\include
+    INCLUDEPATH += C:\\Qt\\Library\\Frameworks\\OgreSDK_MinGW_v1-8-1\\include\\OIS
+    INCLUDEPATH += C:\\Qt\\Library\\Frameworks\\OgreSDK_MinGW_v1-8-1\\include\\OGRE
+    INCLUDEPATH += C:\\Qt\\Library\\Frameworks\\OgreSDK_MinGW_v1-8-1\\boost
     # If you are using Ogre 1.9 also include the following line:
     # INCLUDEPATH += $(OGRE_HOME)\\include\\OGRE\\Overlay
 }
