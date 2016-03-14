@@ -3,7 +3,7 @@ TARGET = Magicka
 
 #DEFINES -= UNICODE
 
-CONFIG -= qt
+CONFIG += qt
 
 win32 {
     #LIBS *= user32.lib
@@ -32,4 +32,15 @@ release {
 }
 
 SOURCES += \
-    main.cpp
+    main.cpp \
+    BaseApplication.cpp \
+    TutorialApplication.cpp
+
+DISTFILES += \
+    Magicka.pro.user \
+    Magicka.pro.user.9f35020 \
+    README.md
+
+HEADERS += \
+    BaseApplication.h \
+    TutorialApplication.h
