@@ -2,8 +2,9 @@ TEMPLATE = app
 TARGET = Magicka
 
 #DEFINES -= UNICODE
-
-CONFIG -= qt
+QT += widgets
+CONFIG += qt
+QT += opengl
 
 win32 {
     #LIBS *= user32.lib
@@ -32,4 +33,8 @@ release {
 }
 
 SOURCES += \
-    main.cpp
+    main.cpp \
+    ogrewidget.cpp
+
+HEADERS += \
+    ogrewidget.h
