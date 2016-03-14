@@ -14,7 +14,7 @@ class OgreWidget : public QGLWidget
     QGLWidget( parent ),
     mOgreWindow(NULL)
     {
-      init( "../bin/plugins.cfg", "../bin/ogre.cfg", "../bin/ogre.log" );
+      init( "", "", "" );
     }
 
   virtual ~OgreWidget()

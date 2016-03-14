@@ -84,7 +84,7 @@
 
 int main(int argc, char *argv[])
 {
-    new Ogre::Root("");
+    //new Ogre::Root("");
     QApplication app(argc, argv);
 
     QWidget window;
